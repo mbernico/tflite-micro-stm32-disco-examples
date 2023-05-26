@@ -32,7 +32,7 @@ jobs:
 
       - name: Sync the code
         run: |
-          pip3 install six Pillow Wave
+          pip3 install six Pillow Wave numpy
           ./scripts/sync_from_tflm.sh
           git config --local user.name "TFLM-bot"
           git config --local user.email "tflm-github-bot@google.com"
